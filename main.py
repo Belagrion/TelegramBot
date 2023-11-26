@@ -21,7 +21,7 @@ def values(message: telebot.types.Message):
     bot.reply_to(message, text)
 
 @bot.message_handler(content_types=['text', ])
-def covert(message: telebot.types.Message):
+def get_price(message: telebot.types.Message):
     try:
         values = message.text.split(' ')
 
